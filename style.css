@@ -1,0 +1,204 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Container for the whole CV */
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Header Styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+header .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+header .personal-info {
+    font-size: 1rem;
+}
+
+header .personal-info ul {
+    list-style-type: none;
+}
+
+header .personal-info ul li {
+    margin: 5px 0;
+}
+
+header .personal-info ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+nav {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content */
+
+main {
+    margin-top: 40px;
+}
+
+
+/* Section Styles */
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* Skills Section */
+
+.skills ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skills ul li {
+    margin: 10px 0;
+}
+
+.skills ul li strong {
+    font-weight: bold;
+}
+
+
+/* Code Example Styling */
+
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .profile {
+        text-align: center;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 10px;
+    }
+}
